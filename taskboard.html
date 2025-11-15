@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskBoard</title>
+  <link rel="stylesheet" href="taskboard.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">TaskBoard</h1>
+
+    <div class="progress-container">
+      <span id="progressText">0% Completed</span>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter your task..." required />
+      <input type="date" id="dueDate" required />
+      <select id="prioritySelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="taskboard.js"></script>
+</body>
+</html>
